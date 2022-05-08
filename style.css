@@ -1,20 +1,43 @@
-body {background-color: white;}
-h1 {
-    font: small-caps bold 24px/1 sans-serif;
-}
-h2 {
-    font: small-caps bold 24px/1 sans-serif;
-}
-body{
-    font: 1.2em "Fira Sans", sans-serif;
-}
-ul{
-    list-style: square;
-}
-img{
-    border: solid;
-    border-color: black;
-}
-body{
-    letter-spacing: -1px;
-}
+#main {
+    background-color: white;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  font-family: sans-serif;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    font-size: 40px
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  #tribute-link {
+    font-size: 15px;
+  }
+  ul {
+    padding-top: 1px;
+    padding-bottom: 40px;
+    line-height: 2;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  #headline {
+    text-align: center;
+    font-size: 40px;
+  }
+  ul.no-bullets {
+    list-style-type: none;
+  }
+  #img-caption {
+    font-size: 10px;
+  }
