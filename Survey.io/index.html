@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Your Page Title</title>
+    <title>Job Application</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -12,8 +12,159 @@
     <!-- Do not delete the line below. It provides the test suite for user stories. -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1>Woot</h1>
-
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center"><strong>McDonalds Application</strong></h1>
+          <p id="description" class="description text-center">
+            We will email you within 5-10 days with a response
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Enter your name here</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="First Last"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Enter your email here</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="person@gmail.com"
+              required
+            />
+             <div class="description text-center">
+          </div>
+           <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">   </span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="18"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+            <p>What is your current occupation</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current occupaton</option>
+              <option value="student">Student</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label id="occupation-label" for="email">If you slected other, type your occupation here. If you are unemployed please type, "unemployed"</label>
+            <input
+              type="occupation"
+              name="occupation"
+              id="occupation"
+              class="form-control"
+              placeholder="Enter your occupation here"
+              required
+          <div class="form-group">
+            <p>Have you ever worked before</p>
+            <label>
+              <input
+                name="Previous testing"
+                value="yes"
+                type="radio"
+                class="input-radio"
+      
+              />Yes</label
+            >
+            <label>
+              <input
+                name="Previous testing"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+      
+            <label
+          </div>
+      
+          <div class="form-group">
+            <p>
+              How did you hear about this job?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Advertisement(From anywhere)</option>
+              <option value="projects">From a friend</option>
+              <option value="openSource">Other</option>
+            </select>
+            </div>
+          <div class="form-group">
+            <p>Why do you want this job</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="I want this job because..."
+            ></textarea>
+          </div>
+       <div class="form-group">
+            <p>
+             What Job do you intend to do
+              <span class="clue"></span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Cashier</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Manager</label
+            >
+           <input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Cook</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Anything else you think we should know about you, health issue, mediciations, medical conditions, etc...</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit application
+            </button>
+          </div>
+        </form>
+      </div>
+     
 </body>
 
 </html>
